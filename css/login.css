@@ -1,10 +1,26 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
-.footer {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+nav,
+footer {
+  background: linear-gradient(
+    90deg,
+    #ff0f00 0%,
+    #ff9a00 10%,
+    #d0de21 20%,
+    #4fdc4a 30%,
+    #3fdad8 40%,
+    #2fc9e2 50%,
+    #1c7fee 60%,
+    #5f15f2 70%,
+    #ba0cf8 80%,
+    #fb07d9 90%,
+    #ff0000 100%
+  );
+  backdrop-filter: blur(2px);
+}
+.nav-link {
+    color: white;
 }
