@@ -22,5 +22,15 @@ footer {
   backdrop-filter: blur(2px);
 }
 .nav-link {
-    color: white;
+  color: white;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main .container {
+  flex-grow: 1;
 }
