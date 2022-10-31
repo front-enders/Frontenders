@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="css/espera.css" />
   </head>
   <body>
-    <header class="container">
+    <header class="container p-0">
       <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">LOGO</a>
@@ -41,83 +41,85 @@
                 <a class="nav-link">Contatos</a>
               </li>
             </ul>
-            <div class="col-md-3 text-end col-sm text-center">
-              <button type="button" class="btn btn-outline-primary me-2">
+            <div class="col-md-3 text-end col-sm text-center" id="btn-header">
+              <button type="button" class="btn btn-outline-secondary me-2">
                 Login
               </button>
-              <button type="button" class="btn btn-primary">Cadastro</button>
+              <button type="button" class="btn btn-outline-secondary">
+                Cadastro
+              </button>
             </div>
           </div>
         </div>
       </nav>
     </header>
     <main class="container">
-      <section class="row mt-5 mb-0">
-        <div class="col-8 mx-start border border-secondary rounded-3 p-5">
+      <section class="row mt-5 mb-5">
+        <div class="col-lg-8 col-sm-12 mx-auto shadow rounded-3 p-5" id="box">
           <form action="" class="d-flex flex-wrap justify-content-around">
             <div>
-              <label for="">Nome</label>
+              <label for="" class="d-flex justify-content-start">Nome</label>
               <div><input type="text" class="form-control mb-3" /></div>
             </div>
             <div>
-              <label for="">Sobrenome</label>
+              <label for="" class="d-flex justify-content-start">Sobrenome</label>
               <div><input type="text" class="form-control mb-3" /></div>
             </div>
             <div>
-              <label for="">RG</label>
+              <label for="" class="d-flex justify-content-start">RG</label>
               <div><input type="number" class="form-control mb-3" /></div>
             </div>
             <div>
-              <label for="">CEP</label>
+              <label for="" class="d-flex justify-content-start">CEP</label>
               <div><input type="number" class="form-control mb-3" /></div>
             </div>
             <div>
-              <label for="">Estado</label>
+              <label for="" class="d-flex justify-content-start">Estado</label>
               <div><input type="text" class="form-control mb-3" /></div>
             </div>
             <div>
-              <label for="">Bairro</label>
+              <label for="" class="d-flex justify-content-start">Bairro</label>
               <div><input type="text" class="form-control mb-3" /></div>
             </div>
             <div>
-              <label for="">Rua</label>
+              <label for="" class="d-flex justify-content-start">Rua</label>
               <div><input type="text" class="form-control mb-3" /></div>
             </div>
             <div>
-              <label for="">Número</label>
+              <label for="" class="d-flex justify-content-start">Número</label>
               <div><input type="number" class="form-control mb-3" /></div>
             </div>
             <div>
-              <label for="">Complemento</label>
+              <label for="" class="d-flex justify-content-start">Complemento</label>
               <div><input type="text" class="form-control mb-3" /></div>
             </div>
             <div>
-              <label for="">Email</label>
+              <label for="" class="d-flex justify-content-start">Email</label>
               <div><input type="text" class="form-control mb-3" /></div>
             </div>
             <div>
-              <label for="">Senha</label>
+              <label for="" class="d-flex justify-content-start">Senha</label>
               <div><input type="password" class="form-control mb-3" /></div>
             </div>
             <div>
-              <label for="">Confirmar senha</label>
+              <label for="" class="d-flex justify-content-start">Confirmar senha</label>
               <div><input type="password" class="form-control mb-3" /></div>
             </div>
             <div>
-              <button type="submit">Adicionar a lista de espera</button>
+              <button type="submit" class="btn btn-outline-dark fw-bold mt-3">Adicionar a lista de espera</button>
             </div>
           </form>
         </div>
-        <div class="col-4 d-flex align-self-end">
+        <div class="col-lg-4 col-sm-12 d-flex align-self-end mb-5">
           <img class="img-fluid" src="img/rafiki.svg" alt="" />
         </div>
-        <div class="icon-acess">
-          <img src="img/icons/darkmode 1.svg" alt="" /><img
-            src="img/icons/kisspng-logo.svg"
-            alt=""
-          /><img src="img/icons/libras 1.svg" alt="" />
-        </div>
       </section>
+      <div class="icon-acess mb-5">
+        <img src="img/icons/darkmode 1.svg" alt="" /><img
+          src="img/icons/kisspng-logo.svg"
+          alt=""
+        /><img src="img/icons/libras 1.svg" alt="" />
+      </div>
     </main>
 
     <footer class="container bg-light text-center text-lg-start">
