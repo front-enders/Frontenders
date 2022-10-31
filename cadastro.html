@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="css/cadastro.css" />
   </head>
   <body>
-    <header class="container">
+    <header class="container p-0">
       <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">LOGO</a>
@@ -41,11 +41,13 @@
                 <a class="nav-link">Contatos</a>
               </li>
             </ul>
-            <div class="col-md-3 text-end col-sm text-center">
-              <button type="button" class="btn btn-outline-primary me-2">
+            <div class="col-md-3 text-end col-sm text-center" id="btn-header">
+              <button type="button" class="btn btn-outline-secondary me-2">
                 Login
               </button>
-              <button type="button" class="btn btn-primary">Cadastro</button>
+              <button type="button" class="btn btn-outline-secondary">
+                Cadastro
+              </button>
             </div>
           </div>
         </div>
@@ -53,24 +55,33 @@
     </header>
     <main class="container">
       <section class="row mt-5 mb-0">
-        <div class="col-4 mx-auto border border-secondary rounded-3 p-5">
-          <h1 class="text-center mb-3">Faça o login</h1>
+        <div
+          class="col-lg-4 col-sm-12 mx-auto mb-5 shadow rounded-3 p-5 text-center"
+          id="box"
+        >
+          <h1 class="text-center mb-3">Faça seu cadastro</h1>
           <hr class="mb-3" />
-          <form action="" class="text-center">
-            <label for="">Nome</label>
+          <form action="">
+            <label for="" class="d-flex justify-content-start">Nome</label>
             <div><input type="text" class="form-control mb-3" /></div>
-            <label for="">Sobrenome</label>
+            <label for="" class="d-flex justify-content-start">Sobrenome</label>
             <div><input type="text" class="form-control mb-3" /></div>
-            <label for="">Email</label>
+            <label for="" class="d-flex justify-content-start">Email</label>
             <div><input type="email" class="form-control mb-3" /></div>
-            <label for="">Senha</label>
+            <label for="" class="d-flex justify-content-start">Senha</label>
             <div><input type="password" class="form-control mb-3" /></div>
-            <label for="">Confirmar senha</label>
+            <label for="" class="d-flex justify-content-start"
+              >Confirmar senha</label
+            >
             <div><input type="password" class="form-control mb-3" /></div>
-            <button type="submit">Entrar</button>
+            <button type="submit" class="btn btn-outline-dark fw-bold mt-3">
+              Entrar
+            </button>
           </form>
         </div>
-        <div><img class="img-fluid" src="img/cuate.svg" alt="" /></div>
+        <div class="d-flex justify-content-start mb-5">
+          <img class="img-fluid" src="img/cuate.svg" alt="" />
+        </div>
         <div class="icon-acess">
           <img src="img/icons/darkmode 1.svg" alt="" /><img
             src="img/icons/kisspng-logo.svg"
