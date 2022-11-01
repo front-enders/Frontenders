@@ -55,58 +55,77 @@
     </header>
     <main class="container">
       <section class="row mt-5 mb-5">
-        <div class="col-lg-8 col-sm-12 mx-auto shadow rounded-3 p-5" id="box">
+        <div
+          class="col-lg-8 col-sm-12 mx-auto shadow rounded-3 p-5"
+          id="boxgit"
+        >
           <form action="" class="d-flex flex-wrap justify-content-around">
             <div>
               <label for="" class="d-flex justify-content-start">Nome</label>
-              <div><input type="text" class="form-control mb-3" /></div>
+              <div><input type="text" class="form-control mb-3" id="nome" /></div>
             </div>
             <div>
-              <label for="" class="d-flex justify-content-start">Sobrenome</label>
-              <div><input type="text" class="form-control mb-3" /></div>
+              <label for="" class="d-flex justify-content-start"
+                >Sobrenome</label
+              >
+              <div><input type="text" class="form-control mb-3" id="sobrenome" /></div>
             </div>
             <div>
               <label for="" class="d-flex justify-content-start">RG</label>
-              <div><input type="number" class="form-control mb-3" /></div>
+              <div><input type="number" class="form-control mb-3" id="rg"/></div>
             </div>
             <div>
-              <label for="" class="d-flex justify-content-start">CEP</label>
-              <div><input type="number" class="form-control mb-3" /></div>
-            </div>
-            <div>
-              <label for="" class="d-flex justify-content-start">Estado</label>
-              <div><input type="text" class="form-control mb-3" /></div>
-            </div>
-            <div>
-              <label for="" class="d-flex justify-content-start">Bairro</label>
-              <div><input type="text" class="form-control mb-3" /></div>
+              <label for="cep" class="d-flex justify-content-start">CEP</label>
+              <div>
+                <input type="number" class="form-control mb-3" id="cep" />
+              </div>
             </div>
             <div>
               <label for="" class="d-flex justify-content-start">Rua</label>
-              <div><input type="text" class="form-control mb-3" /></div>
+              <div>
+                <input type="text" class="form-control mb-3" id="logradouro" />
+              </div>
+            </div>
+            <div>
+              <label for="" class="d-flex justify-content-start">Bairro</label>
+              <div>
+                <input type="text" class="form-control mb-3" id="bairro" />
+              </div>
+            </div>
+            <div>
+              <label for="" class="d-flex justify-content-start">Cidade</label>
+              <div>
+                <input type="text" class="form-control mb-3" id="localidade" />
+              </div>
             </div>
             <div>
               <label for="" class="d-flex justify-content-start">Número</label>
-              <div><input type="number" class="form-control mb-3" /></div>
+              <div><input type="number" class="form-control mb-3" id="numero"/></div>
             </div>
             <div>
-              <label for="" class="d-flex justify-content-start">Complemento</label>
-              <div><input type="text" class="form-control mb-3" /></div>
+              <label for="" class="d-flex justify-content-start"
+                >Estado</label
+              >
+              <div><input type="text" class="form-control mb-3" id="uf" /></div>
             </div>
             <div>
               <label for="" class="d-flex justify-content-start">Email</label>
-              <div><input type="text" class="form-control mb-3" /></div>
+              <div><input type="text" class="form-control mb-3" id="email"/></div>
             </div>
             <div>
               <label for="" class="d-flex justify-content-start">Senha</label>
+              <div><input type="password" class="form-control mb-3" id="senha" /></div>
+            </div>
+            <div>
+              <label for="" class="d-flex justify-content-start"
+                >Confirmar senha</label
+              >
               <div><input type="password" class="form-control mb-3" /></div>
             </div>
             <div>
-              <label for="" class="d-flex justify-content-start">Confirmar senha</label>
-              <div><input type="password" class="form-control mb-3" /></div>
-            </div>
-            <div>
-              <button type="submit" class="btn btn-outline-dark fw-bold mt-3">Adicionar a lista de espera</button>
+              <button type="button" class="btn btn-outline-dark fw-bold mt-3" onclick="enviar()">
+                Adicionar a lista de espera
+              </button>
             </div>
           </form>
         </div>
@@ -163,5 +182,8 @@
       integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
       crossorigin="anonymous"
     ></script>
+    <script src="./javascript/espera.js"></script>
+    <script>consultaEndereco(), enviar()</script>
+    <script></script>
   </body>
 </html>
