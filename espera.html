@@ -42,11 +42,14 @@
               </li>
             </ul>
             <div class="col-md-3 text-end col-sm text-center" id="btn-header">
-              <button type="button" class="btn btn-outline-secondary me-2">
-                Login
+              <button
+                type="button"
+                class="btn btn-outline-secondary me-2"
+                href="login.html"
+              ><a href="login.html">Login</a>
               </button>
               <button type="button" class="btn btn-outline-secondary">
-                Cadastro
+                <a href="cadastro.html">Cadastro</a>
               </button>
             </div>
           </div>
@@ -62,65 +65,65 @@
           <form action="" class="d-flex flex-wrap justify-content-around">
             <div>
               <label for="" class="d-flex justify-content-start">Nome</label>
-              <div><input type="text" class="form-control mb-3" id="nome" /></div>
+              <div><input type="text" class="form-control mb-3" id="nome" required /></div>
             </div>
             <div>
               <label for="" class="d-flex justify-content-start"
                 >Sobrenome</label
               >
-              <div><input type="text" class="form-control mb-3" id="sobrenome" /></div>
+              <div><input type="text" class="form-control mb-3" id="sobrenome" required /></div>
             </div>
             <div>
               <label for="" class="d-flex justify-content-start">RG</label>
-              <div><input type="number" class="form-control mb-3" id="rg"/></div>
+              <div><input type="number" class="form-control mb-3" id="rg" required/></div>
             </div>
             <div>
               <label for="cep" class="d-flex justify-content-start">CEP</label>
               <div>
-                <input type="number" class="form-control mb-3" id="cep" />
+                <input type="number" class="form-control mb-3" id="cep"  required />
               </div>
             </div>
             <div>
               <label for="" class="d-flex justify-content-start">Rua</label>
               <div>
-                <input type="text" class="form-control mb-3" id="logradouro" />
+                <input type="text" class="form-control mb-3" id="logradouro" required />
               </div>
             </div>
             <div>
               <label for="" class="d-flex justify-content-start">Bairro</label>
               <div>
-                <input type="text" class="form-control mb-3" id="bairro" />
+                <input type="text" class="form-control mb-3" id="bairro" required />
               </div>
             </div>
             <div>
               <label for="" class="d-flex justify-content-start">Cidade</label>
               <div>
-                <input type="text" class="form-control mb-3" id="localidade" />
+                <input type="text" class="form-control mb-3" id="localidade" required />
               </div>
             </div>
             <div>
-              <label for="" class="d-flex justify-content-start">Número</label>
+              <label for="" class="d-flex justify-content-start" required>Número</label>
               <div><input type="number" class="form-control mb-3" id="numero"/></div>
             </div>
             <div>
               <label for="" class="d-flex justify-content-start"
                 >Estado</label
               >
-              <div><input type="text" class="form-control mb-3" id="uf" /></div>
+              <div><input type="text" class="form-control mb-3" id="uf" required /></div>
             </div>
             <div>
               <label for="" class="d-flex justify-content-start">Email</label>
-              <div><input type="text" class="form-control mb-3" id="email"/></div>
+              <div><input type="text" class="form-control mb-3" id="email" required/></div>
             </div>
             <div>
               <label for="" class="d-flex justify-content-start">Senha</label>
-              <div><input type="password" class="form-control mb-3" id="senha" /></div>
+              <div><input type="password" class="form-control mb-3" id="senha" required /></div>
             </div>
             <div>
               <label for="" class="d-flex justify-content-start"
                 >Confirmar senha</label
               >
-              <div><input type="password" class="form-control mb-3" /></div>
+              <div><input type="password" class="form-control mb-3" required /></div>
             </div>
             <div>
               <button type="button" class="btn btn-outline-dark fw-bold mt-3" onclick="enviar()">
@@ -182,8 +185,6 @@
       integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
       crossorigin="anonymous"
     ></script>
-    <script src="./javascript/espera.js"></script>
-    <script>consultaEndereco(), enviar()</script>
-    <script></script>
+    <script src="/js/espera.js"></script>
   </body>
 </html>

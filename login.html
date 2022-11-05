@@ -42,11 +42,14 @@
               </li>
             </ul>
             <div class="col-md-3 text-end col-sm text-center" id="btn-header">
-              <button type="button" class="btn btn-outline-secondary me-2">
-                Login
+              <button
+                type="button"
+                class="btn btn-outline-secondary me-2"
+                href="login.html"
+              ><a href="login.html">Login</a>
               </button>
               <button type="button" class="btn btn-outline-secondary">
-                Cadastro
+                <a href="cadastro.html">Cadastro</a>
               </button>
             </div>
           </div>
@@ -65,12 +68,15 @@
             <label for="" class="d-flex justify-content-start"
               >Email ou usuário</label
             >
-            <div><input type="text" class="form-control mb-3" /></div>
+            <div><input type="text" class="form-control mb-3" required /></div>
             <label for="" class="d-flex justify-content-start">Senha</label>
-            <div><input type="password" class="form-control mb-3" /></div>
-            <button type="submit" class="btn btn-outline-dark fw-bold mt-3">
+            <div>
+              <input type="password" class="form-control mb-3" required />
+            </div>
+            <button type="submit" class="btn btn-outline-dark fw-bold mt-3 mb-3">
               Entrar
             </button>
+            <div><a href="redefinir.html" class="text-center text-decoration-none">Esqueceu sua senha?</a></div>
           </form>
         </div>
         <div class="d-flex justify-content-end mb-5">

@@ -4,14 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cadastro</title>
+    <title>Redefinir senha</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="css/cadastro.css" />
+    <link rel="stylesheet" href="css/redefinir.css" />
   </head>
   <body>
     <header class="container p-0">
@@ -62,35 +62,27 @@
           class="col-lg-4 col-sm-12 mx-auto mb-5 shadow rounded-3 p-5 text-center"
           id="box"
         >
-          <h1 class="text-center mb-3">Faça seu cadastro</h1>
+          <h1 class="text-center mb-3">Redefinir senha</h1>
           <hr class="mb-3" />
           <form action="">
-            <label for="" class="d-flex justify-content-start">Nome</label>
-            <div><input type="text" class="form-control mb-3" required /></div>
-            <label for="" class="d-flex justify-content-start">Sobrenome</label>
-            <div><input type="text" class="form-control mb-3" required/></div>
-            <label for="" class="d-flex justify-content-start">Email</label>
-            <div><input type="email" class="form-control mb-3" required/></div>
-            <label for="" class="d-flex justify-content-start">Senha</label>
-            <div><input type="password" class="form-control mb-3" required/></div>
             <label for="" class="d-flex justify-content-start"
-              >Confirmar senha</label
+              >Email cadastrado</label
             >
-            <div><input type="password" class="form-control mb-3" required/></div>
+            <div><input type="email" name="email" class="form-control mb-3" required /></div>
+            <p id="resultado"></p>
             <button type="submit" class="btn btn-outline-dark fw-bold mt-3">
-              Entrar
+              Enviar
             </button>
           </form>
         </div>
-        <div class="col-lg-3 col-sm-12 d-flex justify-content-start mb-5">
-          <img class="img-fluid" src="img/cuate.svg" alt="" />
+        <div class="d-flex justify-content-end mb-5">
+          <img class="img-fluid" src="img/amico.svg" alt="" />
         </div>
       </section>
-      <div class="icon-acess">
-        <img src="img/icons/darkmode 1.svg" alt="" /><img
-          src="img/icons/kisspng-logo.svg"
-          alt=""
-        /><img src="img/icons/libras 1.svg" alt="" />
+      <div class="d-flex flex-column" id="icon-acess">
+        <img src="img/icons/darkmode 1.svg" class="icon-acess-img" alt="" />
+        <img src="img/icons/kisspng-logo.svg" class="icon-acess-img" alt="" />
+        <img src="img/icons/libras 1.svg" class="icon-acess-img" alt="" />
       </div>
     </main>
 
@@ -135,5 +127,6 @@
       integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
       crossorigin="anonymous"
     ></script>
+    <script src="/js/redefinir.js"></script>
   </body>
 </html>

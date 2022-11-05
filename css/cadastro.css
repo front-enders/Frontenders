@@ -56,7 +56,9 @@ form .btn {
   padding-bottom: 10px;
 }
 
-#btn-header button {
+#btn-header button,
+#btn-header a {
   background: #566bb9;
   color: white;
+  text-decoration: none;
 }

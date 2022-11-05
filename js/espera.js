@@ -47,3 +47,6 @@ function enviar() {
 console.log(json);
 
 }
+
+consultaEndereco()
+enviar()
