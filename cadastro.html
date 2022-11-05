@@ -46,7 +46,8 @@
                 type="button"
                 class="btn btn-outline-secondary me-2"
                 href="login.html"
-              ><a href="login.html">Login</a>
+              >
+                <a href="login.html">Login</a>
               </button>
               <button type="button" class="btn btn-outline-secondary">
                 <a href="cadastro.html">Cadastro</a>
@@ -68,15 +69,17 @@
             <label for="" class="d-flex justify-content-start">Nome</label>
             <div><input type="text" class="form-control mb-3" required /></div>
             <label for="" class="d-flex justify-content-start">Sobrenome</label>
-            <div><input type="text" class="form-control mb-3" required/></div>
+            <div><input type="text" class="form-control mb-3" required /></div>
             <label for="" class="d-flex justify-content-start">Email</label>
-            <div><input type="email" class="form-control mb-3" required/></div>
+            <div><input type="email" class="form-control mb-3" required /></div>
             <label for="" class="d-flex justify-content-start">Senha</label>
-            <div><input type="password" class="form-control mb-3" required/></div>
-            <label for="" class="d-flex justify-content-start"
-              >Confirmar senha</label
-            >
-            <div><input type="password" class="form-control mb-3" required/></div>
+            <div>
+              <input type="password" class="form-control mb-3" id="senha" required  />
+            </div>
+            <label for="" class="d-flex justify-content-start">Confirmar senha</label>
+            <div>
+              <input type="password" class="form-control mb-3" id="senha2" required />
+            </div>
             <button type="submit" class="btn btn-outline-dark fw-bold mt-3">
               Entrar
             </button>
@@ -135,5 +138,6 @@
       integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
       crossorigin="anonymous"
     ></script>
+    <script src="/js/cadastro.js"></script>
   </body>
 </html>
