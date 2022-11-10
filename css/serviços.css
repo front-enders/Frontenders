@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+ 
 }
 
 nav,
@@ -20,15 +21,21 @@ footer {
     #ff0000 100%
   );
   backdrop-filter: blur(2px);
+  
 }
 .nav-link {
   color: white;
 }
 
 body {
-  height: 100vh;
+  
   display: flex;
   flex-direction: column;
+  background-image: url(../img/fundo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+ 
 }
 
 main .container {
@@ -138,7 +145,18 @@ form .btn {
     font-weight: bold;
   }
   /* imagens */
-  .img {
-    align-items: center;
-    height: 40px;
+  img {
+    width: 50%;
+    height: auto;
+    border-radius: 30px;
   }
+
+  @media(max-width: 900px){
+    .container4 {
+      width: 100%;
+      align-items: center;
+  }
+    .conteudo {
+      width: 85%;
+    }
+ }
